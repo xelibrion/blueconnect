@@ -22,6 +22,7 @@ def main():
             log.info('Device is not connected, attempting to connect')
             ctl.power_on()
             ctl.connect(YAMAHA_MAC)
+            log.info('Device is now connected')
         except pexpect.exceptions.TIMEOUT:
             continue
 
